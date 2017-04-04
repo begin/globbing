@@ -11,7 +11,7 @@
     "gulp-format-md": "^0.1.11"
   },
   "verb": {
-    "toc": false,
+    "toc": true,
     "layout": false,
     "tasks": [
       "readme"
