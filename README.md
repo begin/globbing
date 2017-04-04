@@ -213,6 +213,8 @@ The following are (or include) similar conceps to globs:
 
 **Tools and software**
 
+TODO (convert to table)
+
 In alphabetical order:
 
 * [bash-glob](https://github.com/jonschlinkert/bash-glob) (JavaScript/node.js)
