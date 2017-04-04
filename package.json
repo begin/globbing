@@ -1,0 +1,45 @@
+{
+  "name": "globbing",
+  "description": "Cheatsheet and introduction to globbing, aka glob matching or filepath expansion, a concept from Bash that is used for matching files using wildcards.",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://github.com/begin/globbing",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "begin/globbing",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-format-md": "^0.1.11"
+  },
+  "verb": {
+    "toc": false,
+    "layout": false,
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "bash",
+      "bash-glob",
+      "brace-expansion",
+      "braces",
+      "expand-brackets",
+      "extglob",
+      "glob",
+      "micromatch",
+      "minimatch",
+      "verb",
+      "verb-generate-readme",
+      "ac",
+      "b-d",
+      "character-classes"
+    ]
+  }
+}
