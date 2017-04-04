@@ -176,7 +176,7 @@ The following options are commonly available on various globbing implementations
 | `extglob` | Enable extended globs. In addition to the traditional globs (using wildcards: `*`, `*`, `?` and `[...]`), extended globs add (almost) the expressive power of regular expressions, allowing the use of patterns like `foo/!(a | b)*` |
 | `dotglob` | Allows files beginning with `.` to be included in matches. This option is automatically enabled if the glob pattern begins with a dot. Aliases: `dot` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
 | `failglob` | report an error when no matches are found |
-| `globignore` allows you to specify patterns a glob should not match  Aliases: `ignore` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
+| `globignore` | allows you to specify patterns a glob should not match  Aliases: `ignore` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
 | `globstar` | recursively match directory paths (enabled by default in [minimatch](https://github.com/isaacs/minimatch) and [micromatch](https://github.com/jonschlinkert/micromatch), but not in [bash](https://github.com/felixge/node-bash)) |
 | `nocaseglob` | perform case-insensitive pathname expansion |
 | `nocasematch` | perform case-insensitive matching. Aliases: `nocase` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
