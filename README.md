@@ -93,7 +93,7 @@ TBC...
 As described by the bash man page:
 
 | **pattern** | **regex equivalent** | **description** | 
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | `?(pattern-list)` | `(... | ...)?` | Matches zero or one occurrence of the given patterns |
 | `*(pattern-list)` | `(... | ...)*` | Matches zero or more occurrences of the given patterns |
 | `+(pattern-list)` | `(... | ...)+` | Matches one or more occurrences of the given patterns |
@@ -161,7 +161,7 @@ As with regex, parenthese can be nested, so patterns like `((a|b)|c)/b` will wor
 ## Common options
 
 | **Option name** | **Description** | 
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- |
 | `brackets` | Enable matching with POSIX character classes and regex ranges |
 | `extglob` | Enable extended globs. In addition to the traditional globs (using wildcards: `*`, `*`, `?` and `[...]`), extended globs add (almost) the expressive power of regular expressions, allowing the use of patterns like `foo/!(a | b)*` |
 | `dotglob` | Allows files beginning with `.` to be included in matches. This option is automatically enabled if the glob pattern begins with a dot. Aliases: `dot` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
