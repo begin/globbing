@@ -123,12 +123,7 @@ Visit the [braces](https://github.com/jonschlinkert/braces) library for more exa
 
 POSIX character classes, or "bracket expressions", provide a way of defining regular expressions using something closer to plain english.
 
-**Example**
-
-```js
-mm.isMatch('a1', '[[:alpha:][:digit:]]');
-//=> true
-```
+For example, the pattern `[[:alpha:][:digit:]]` would match `a1`, but not `aa`.
 
 TBC...
 
@@ -165,7 +160,7 @@ As with regex, parenthese can be nested, so patterns like `((a|b)|c)/b` will wor
 
 ## Common options
 
-| Option name | Description | 
+| **Option name** | **Description** | 
 | --- | --- | --- | --- | --- | --- | --- |
 | `brackets` | Enable matching with POSIX character classes and regex ranges |
 | `extglob` | Enable extended globs. In addition to the traditional globs (using wildcards: `*`, `*`, `?` and `[...]`), extended globs add (almost) the expressive power of regular expressions, allowing the use of patterns like `foo/!(a | b)*` |
