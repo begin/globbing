@@ -8,7 +8,7 @@
   "repository": "begin/globbing",
   "license": "MIT",
   "devDependencies": {
-    "gulp-format-md": "^0.1.11"
+    "gulp-format-md": "^0.1.12"
   },
   "verb": {
     "toc": true,
