@@ -26,7 +26,7 @@
     + [regex character classes](#regex-character-classes)
     + [regex groups](#regex-groups)
 - [Common options](#common-options)
-- [Risks](#risks)
+- [Caveats](#caveats)
 - [Related concepts](#related-concepts)
 - [Resources](#resources)
 
@@ -124,9 +124,9 @@ As described by the bash man page:
 
 <sup><strong>*</strong></sup> Note that `@` isn't a RegEx character.
 
-Powered by [extglob](https://github.com/micromatch/extglob). Visit that library for the full range of options or to report extglob related issues.
+**Example implementations**
 
-See [extglob](https://github.com/micromatch/extglob) for more information about extended globs.
+* [extglob](https://github.com/micromatch/extglob) - extended glob parser and matcher for node.js
 
 ### POSIX character classes
 
@@ -136,7 +136,9 @@ For example, the pattern `[[:alpha:][:digit:]]` would match `a1`, but not `aa`.
 
 TBC...
 
-See [expand-brackets](https://github.com/jonschlinkert/expand-brackets) for more information about extended bracket expressions.
+**Example implementations**
+
+* [expand-brackets](https://github.com/jonschlinkert/expand-brackets), node.js API for parsing and matching POSIX bracket expressions
 
 ### Regular expressions
 
@@ -182,7 +184,7 @@ The following options are commonly available on various globbing implementations
 | `nocasematch` | perform case-insensitive matching. Aliases: `nocase` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
 | `nullglob` | when enabled, the pattern itself will be returned when no matches are found. Aliases: `nonull` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
 
-## Risks
+## Caveats
 
 _WIP_
 
