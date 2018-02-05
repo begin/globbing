@@ -106,7 +106,7 @@ Here are some powerful features unique to brace expansion (versus character clas
 
 TBC...
 
-Visit the [braces](https://github.com/jonschlinkert/braces) library for more examples and information about brace expansion.
+Visit the [braces](https://github.com/micromatch/braces) library for more examples and information about brace expansion.
 
 ## extglobs
 
@@ -114,19 +114,19 @@ TBC...
 
 As described by the bash man page:
 
-| **pattern** | **regex equivalent** | **description** | 
+| **pattern** | **regex equivalent** | **matches** | 
 | --- | --- | --- |
-| `?(a\|b\|c)` | `(a\|b\|c)?` | Matches zero or one occurrence of the given patterns |
-| `*(a\|b\|c)` | `(a\|b\|c)*` | Matches zero or more occurrences of the given patterns |
-| `+(a\|b\|c)` | `(a\|b\|c)+` | Matches one or more occurrences of the given patterns |
-| `@(a\|b\|c)` | `(a\|b\|c)` <sup>*</sup> | Matches one of the given patterns |
-| `!(a\|b\|c)` | N/A | Matches anything except one of the given patterns |
+| `?(a\|b\|c)` | `(a\|b\|c)?` | zero or one occurrence of the given patterns |
+| `*(a\|b\|c)` | `(a\|b\|c)*` | zero or more occurrences of the given patterns |
+| `+(a\|b\|c)` | `(a\|b\|c)+` | one or more occurrences of the given patterns |
+| `@(a\|b\|c)` | `(a\|b\|c)` <sup>*</sup> | one of the given patterns |
+| `!(a\|b\|c)` | N/A | anything except one of the given patterns |
 
-<sup><strong>*</strong></sup> `@` isn't a RegEx character.
+<sup><strong>*</strong></sup> Note that `@` isn't a RegEx character.
 
-Powered by [extglob](https://github.com/jonschlinkert/extglob). Visit that library for the full range of options or to report extglob related issues.
+Powered by [extglob](https://github.com/micromatch/extglob). Visit that library for the full range of options or to report extglob related issues.
 
-See [extglob](https://github.com/jonschlinkert/extglob) for more information about extended globs.
+See [extglob](https://github.com/micromatch/extglob) for more information about extended globs.
 
 ### POSIX character classes
 
@@ -165,7 +165,7 @@ Given `['a.js', 'b.js', 'c.js', 'd.js', 'E.js']`:
 * `(b|d).js`: would match either `b` or `d`, returning `['b.js', 'd.js']`
 * `(b|[A-Z]).js`: would match either `b` or an uppercase letter, returning `['b.js', 'E.js']`
 
-As with regex, parenthese can be nested, so patterns like `((a|b)|c)/b` will work. But it might be easier to achieve your goal using brace expansion.
+As with regex, parentheses can be nested, so patterns like `((a|b)|c)/b` will work. But it might be easier to achieve your goal using brace expansion.
 
 ## Common options
 
@@ -174,13 +174,13 @@ The following options are commonly available on various globbing implementations
 | **Option name** | **Description** | 
 | --- | --- |
 | `extglob` | Enable extended globs. In addition to the traditional globs (using wildcards: `*`, `*`, `?` and `[...]`), extended globs add (almost) the expressive power of regular expressions, allowing the use of patterns like `foo/!(a | b)*` |
-| `dotglob` | Allows files beginning with `.` to be included in matches. This option is automatically enabled if the glob pattern begins with a dot. Aliases: `dot` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
+| `dotglob` | Allows files beginning with `.` to be included in matches. This option is automatically enabled if the glob pattern begins with a dot. Aliases: `dot` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
 | `failglob` | report an error when no matches are found |
-| `globignore` | allows you to specify patterns a glob should not match  Aliases: `ignore` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
-| `globstar` | recursively match directory paths (enabled by default in [minimatch](https://github.com/isaacs/minimatch) and [micromatch](https://github.com/jonschlinkert/micromatch), but not in [bash](https://github.com/felixge/node-bash)) |
+| `globignore` | allows you to specify patterns a glob should not match  Aliases: `ignore` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
+| `globstar` | recursively match directory paths (enabled by default in [minimatch](https://github.com/isaacs/minimatch) and [micromatch](https://github.com/micromatch/micromatch), but not in [bash](https://github.com/felixge/node-bash)) |
 | `nocaseglob` | perform case-insensitive pathname expansion |
-| `nocasematch` | perform case-insensitive matching. Aliases: `nocase` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
-| `nullglob` | when enabled, the pattern itself will be returned when no matches are found. Aliases: `nonull` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/jonschlinkert/micromatch)) |
+| `nocasematch` | perform case-insensitive matching. Aliases: `nocase` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
+| `nullglob` | when enabled, the pattern itself will be returned when no matches are found. Aliases: `nonull` (supported by: [minimatch](https://github.com/isaacs/minimatch), [micromatch](https://github.com/micromatch/micromatch)) |
 
 ## Risks
 
@@ -225,11 +225,11 @@ TODO (convert to table)
 
 In alphabetical order:
 
-* [bash-glob](https://github.com/jonschlinkert/bash-glob) (JavaScript/node.js)
+* [bash-glob](https://github.com/micromatch/bash-glob) (JavaScript/node.js)
 * [brace-expansion](https://github.com/juliangruber/brace-expansion) (JavaScript/node.js)
-* [braces](https://github.com/jonschlinkert/braces) (JavaScript/node.js)
+* [braces](https://github.com/micromatch/braces) (JavaScript/node.js)
 * [expand-brackets](https://github.com/jonschlinkert/expand-brackets) (JavaScript/node.js)
 * [glob](https://github.com/isaacs/node-glob) (JavaScript/node.js)
-* [micromatch](https://github.com/jonschlinkert/micromatch) (JavaScript/node.js)
-* [nanomatch](https://github.com/jonschlinkert/nanomatch) (JavaScript/node.js)
+* [micromatch](https://github.com/micromatch/micromatch) (JavaScript/node.js)
+* [nanomatch](https://github.com/micromatch/nanomatch) (JavaScript/node.js)
 * [minimatch](https://github.com/isaacs/minimatch) (JavaScript/node.js)
