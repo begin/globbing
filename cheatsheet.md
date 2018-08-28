@@ -6,10 +6,10 @@ WIP
 
 | **Character** | **Description** | 
 | --- | --- | 
-| `*` | Matches any character zero or more times, except for `/`. | 
-| `**` | Matches any character zero or more times, including `/`. | 
-| `?` | Matches any character one time | 
-| `[abc]` | Matches any of the specified characters (in this case, `a`, `b` or `c`) | 
+| `*` | Matches any character zero or more times, except for `/` | 
+| `**` | Matches any character zero or more times, including `/` | 
+| `?` | Matches any character except for `/` one time | 
+| `[abc]` | Matches any characters inside the brackets. For example, `[abc]` would match the characters `a`, `b` or `c`, and nothing else. | 
 
 Notes:
 
